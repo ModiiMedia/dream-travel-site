@@ -1,0 +1,103 @@
+.hero {
+    padding: 10rem 0;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-color: $dark;
+    position: relative;
+    z-index: 19;
+    @media(max-width:$desktop){
+        padding: 4rem 0;
+    }
+    .image-overlay {
+        background-image: linear-gradient()
+    }
+    .hero-content {
+        font-size: 1.5rem;
+        margin-top: 6rem;
+        position: relative;
+        .color-bar {
+            .bar {
+                background: $info;
+                opacity: 0.7;
+                width: 100%;
+            }
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            @media(max-width: $desktop) {
+                align-items: flex-start;
+            }
+        }
+        .columns {
+            position: relative;
+            align-items: stretch;
+            .column {
+                align-items: center;
+                .content {
+                    // margin-left: auto;
+                    padding: 2rem 0;
+                    * {
+                        color: white;
+                    }
+                    :last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        color: $primary;
+                    }
+                    h1,h2,h3,h4,h5,h6 {
+                        font-weight: 400;
+                    }
+                    strong {
+                        font-weight: 900;
+                    }
+                }
+                &.video {
+                    @media(max-width: $desktop){
+                        margin-bottom: -12rem;
+                    }
+                }
+            }
+        }
+        @media(max-width: $desktop){
+            font-size: 1.1rem;
+            .content {
+                width: 100%;
+                padding: 2rem 0 .5rem 0!important;
+                text-align: center;
+            }
+        }
+    }
+}
+.logo {
+    text-align: center;
+    .title {
+        font-family: 'Abhaya Libre', serif;
+        font-weight: 600;
+        font-size: 100px;
+        line-height: 80%;
+    }
+    .subtitle {
+        font-weight: 300;
+        font-size: 30px;
+    }
+    @media (max-width: $tablet) {
+        .title {
+            font-size: 60px;
+        }
+        .subtitle {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: $desktop){
+    .hero + .section {
+        padding-top: 12rem;
+    }
+}

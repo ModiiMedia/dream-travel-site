@@ -1,0 +1,27 @@
+.dividing-line {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin: 3rem -.5rem;
+    flex-direction: row;
+    .node {
+        padding: 0 .5rem;
+        display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        align-items: center;
+        &.line {
+            flex-grow: 1;
+        }
+        hr {
+            width: 100%;
+            background-color: $text;
+            margin: 0;
+            height: 1px;
+        }
+    }
+}
+
+// .dark .dividing-line .node hr {
+//     background-color: white;
+// }

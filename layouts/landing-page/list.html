@@ -1,0 +1,102 @@
+{{ define "main" }}
+
+{{- with .Params.hero_banner }}
+<section class="hero" 
+    {{- with .background_image -}}
+        {{- $img := resources.Get . -}}
+        {{- $resized := $img.Resize "1920x q70" -}}
+        style="background-image: linear-gradient(179.74deg, rgba(0, 0, 0, 0.48) 0.48%, rgba(255, 255, 255, 0) 99.52%), url({{ $resized.RelPermalink }})"
+    {{- end -}}>
+    <div class="container">
+        <div class="logo">
+            <h1 class="title">Dream Travel</h1>
+            <div class="subtitle">Experience the World Together</div>
+        </div>
+    </div>
+    <div class="hero-content">
+        <div class="color-bar is-flex">
+            <div class="bar" id="hero-banner-bar"></div>
+        </div>
+        <div class="container">
+            <div class="columns is-desktop is-variable is-5">
+                <div class="column is-flex is-narrow">
+                    <div class="content" id="hero-banner-content">
+                        {{ .banner_text | markdownify }}
+                    </div>
+                </div>
+                <div class="column is-flex video">
+                    {{ partial "vimeo-video.html" .banner_video }}
+                </div>
+            </div>            
+        </div>        
+    </div>    
+</section>
+{{- end -}}
+
+{{ $sponsor_id := $.Site.Data.settings.sponsor_id }}
+{{ $cta := .Params.call_to_action }}
+<section class="section {{ $cta.style }}" 
+    {{- with $cta.background_image -}}
+        {{- $img := resources.Get . -}}
+        {{- $resize := $img.Resize "1920x q70" -}}
+        style="background-image: url({{ $resize.RelPermalink }})"
+    {{- end -}}>
+    <div class="image-overlay"></div>
+    <div class="container">
+        <div class="form-box">
+            {{ if not $cta.main_button.hide }}
+                {{ if $sponsor_id }}
+                <div class="content">
+                    {{ $cta.main_button.heading | markdownify }}
+                </div>
+                    <a href="https://signup.worldventures.biz/member/account?sponsorId={{ $sponsor_id }}&pn=Retail&countryCode=US&locale=EN-US&source=&sourceReferenceId=" target="_blank" rel="nofollow" class="button is-large is-primary has-text-weight-bold">{{ $cta.main_button.button_text }}</a>
+                {{ else }}
+                    <div class="error-box">
+                        <div style="font-size: 1.5rem; font-weight: bold">ERROR!!!</div>
+                        Sponsor ID not found. Go to settings and add your sponsor ID in order to link users to the sign up page.</div>
+                {{ end }}
+            <div class="dividing-line">
+                <div class="node line"><hr></div>
+                <div class="node">OR</div>
+                <div class="node line"><hr></div>
+            </div>
+            {{ end }}
+            {{ if not $cta.contact_form.hide }}
+                <div class="content">
+                    {{ $cta.contact_form.heading | markdownify }}
+                </div>
+                <form class="form" name="contact-form" action="POST" data-netlify="true" netlify-honeypot="hp_21_userid">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" name="name" id="form_input_name" 
+                                placeholder="Name" aria-placeholder="Enter Full Name" required 
+                                aria-required autocomplete="name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="email" name="email" id="form_input_email" 
+                            placeholder="Email" aria-placeholder="Enter Email Address" required 
+                            aria-required autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="tel" name="phone" id="form_input_phone" 
+                            placeholder="Phone" aria-placeholder="Enter Phone Number" required 
+                            aria-required autocomplete="tel">
+                        </div>
+                    </div>
+                    <div class="field is-hidden">
+                        <div class="control">
+                            <input class="input" type="number" autocomplete="off" name="hp_21_userid" id="hp_21_userid" placeholder="User ID">
+                        </div>
+                    </div>
+                    <button class="button is-primary is-medium" type="submit">Submit</button>
+                </form>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

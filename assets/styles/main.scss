@@ -1,0 +1,62 @@
+// bulma styles import
+$primary: #EB1C21;
+$info: #4583BD;
+
+@import './_dependencies/sass/utilities/_all.sass';
+@import './_dependencies/sass/base/_all.sass';
+@import './_dependencies/sass/form/_all.sass';
+@import './_dependencies/sass/grid/_all.sass';
+@import './_dependencies/sass/elements/content.sass';
+@import './_dependencies/sass/elements/button.sass';
+@import './partials/hero-banner.scss';
+@import './partials/dividing-line.scss';
+@import './partials/forms.scss';
+@import './partials/footer.scss';
+
+body, button, input, select, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: $widescreen;
+    padding: 0 2rem;
+    margin: 0 auto;
+    @media(max-width: $tablet) {
+        padding: 0 1.5rem;
+    }
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.section {
+    position: relative;
+    padding: 8rem 0;
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    &.light {
+        background-color: rgba(248, 248, 248, 1);
+        .image-overlay {
+            background: rgba(248, 248, 248, 0.95);
+        }
+    }
+    &.dark {
+        background-color: #333333;
+        .image-overlay {
+            background: rgba(33,33,33, 0.95)
+        }
+    }
+}
+
+.error-box {
+    background: $warning;
+    padding: 2rem;
+    // color: white;
+}
