@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{- block "seo" . -}}
+        {{- $seo := .Params.seo -}}
+        <title>{{ if $seo }}{{ $seo.meta_title }}{{ else }}{{ .Title }}{{ end }}</title>
+        <meta name="description" content="{{ if $seo.meta_description }}{{ $seo.meta_description }}{{ end }}">
+        <meta property="og:title" content="{{ if $seo.meta_title }}{{ $seo.meta_title }}{{ else }}{{ .Title }}{{ end }}">
+        <meta property="og:description" content="{{ if $seo.meta_description }}{{ $seo.meta_description }}{{ end }}">
+        <meta property="og:url" content="{{ .Permalink }}">
+        <meta property="og:image" content="
+            {{- if $seo.social_image -}}
+                {{- $img := resources.Get $seo.social_image -}}
+                {{- $resized := $img.Fill "1200x630 80q" -}}
+                {{- $resized.RelPermalink -}}
+            {{- else if .Params.hero_banner.background_image -}}
+                {{- $img := resources.Get .Params.hero_banner.background_image -}}
+                {{- $resized := $img.Fill "1200x630 80q" -}}
+                {{- $resized.RelPermalink -}}
+            {{- end -}}">
+    {{- end -}}
     <title>Document</title>
-    {{ $sass := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify }}
+    {{- $sass := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify -}}
     <link rel="stylesheet" href="{{ $sass.RelPermalink }}">
     <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:600|Roboto:300,400,700,900&display=swap" rel="stylesheet">
-    {{ if not .Site.IsServer }}
+    {{- if not .Site.IsServer -}}
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -16,7 +34,7 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-N74DK3Q');</script>
         <!-- End Google Tag Manager -->
-    {{ end }}
+    {{- end -}}
     <script src="https://kit.fontawesome.com/30b0099d20.js"></script>
 </head>
 <body>
