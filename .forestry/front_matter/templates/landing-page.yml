@@ -1,0 +1,69 @@
+---
+label: Landing Page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: file
+  name: featured_image
+  label: featured_image
+- type: field_group
+  name: hero_banner
+  label: hero_banner
+  fields:
+  - type: text
+    name: banner_text
+    label: banner_text
+  - type: text
+    name: banner_video
+    label: banner_video
+  - type: file
+    name: background_image
+    label: background_image
+- type: field_group
+  name: call_to_action
+  label: call_to_action
+  fields:
+  - type: field_group
+    name: main_button
+    label: main_button
+    fields:
+    - type: text
+      name: heading
+      label: heading
+    - type: text
+      name: button_text
+      label: button_text
+    - type: boolean
+      name: hide
+      label: hide
+  - type: field_group
+    name: contact_form
+    label: contact_form
+    fields:
+    - type: textarea
+      name: heading
+      label: heading
+    - type: boolean
+      name: hide
+      label: hide
+  - type: text
+    name: style
+    label: style
+  - type: file
+    name: background_image
+    label: background_image
+- type: field_group
+  name: seo
+  label: seo
+  fields:
+  - type: text
+    name: meta_title
+    label: meta_title
+  - type: text
+    name: meta_description
+    label: meta_description

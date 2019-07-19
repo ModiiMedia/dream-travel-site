@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/_index.md
   label: Homepage
-  match: "**/*"
 upload_dir: assets/media
 public_path: "/media"
 front_matter_path: ''
