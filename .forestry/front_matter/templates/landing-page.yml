@@ -43,8 +43,14 @@ fields:
     name: main_button
     label: Main Button
     fields:
-    - type: text
-      name: heading
+    - name: heading
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: markdown
       label: Heading
     - type: text
       name: button_text
@@ -61,25 +67,48 @@ fields:
     fields:
     - type: textarea
       name: heading
-      label: heading
+      label: Heading
+      config:
+        wysiwyg: true
+        schema:
+          format: markdown
     - type: boolean
       name: hide
-      label: hide
-  - type: text
-    name: style
-    label: style
+      label: Hide
+  - name: style
+    type: select
+    default: light
+    config:
+      required: true
+      options:
+      - light
+      - dark
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Style
   - type: file
     name: background_image
-    label: background_image
+    label: Background Image
+    config:
+      maxSize: '10'
 - type: field_group
   name: seo
-  label: seo
+  label: SEO
   fields:
   - type: text
     name: meta_title
-    label: meta_title
+    label: Meta Title
   - type: text
     name: meta_description
-    label: meta_description
+    label: Meta Description
+  - name: social_image
+    type: file
+    config:
+      maxSize: '10'
+    label: Social Image
+    description: Image that appears when sharing on social media
 pages:
 - content/_index.md
