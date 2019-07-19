@@ -5,7 +5,7 @@ featured_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
 hero_banner:
   banner_text: "## Your Journey Starts **Here**"
   banner_video: https://vimeo.com/78058789
-  background_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
+  background_image: "/diogo-nunes-K8e4DtETWpg-unsplash.jpg"
 call_to_action:
   main_button:
     heading: "# Ready to Get Started?\n"
@@ -21,5 +21,6 @@ call_to_action:
 seo:
   meta_title: Dream Travel | Experience The World Together
   meta_description: ''
+  social_image: ''
 
 ---
