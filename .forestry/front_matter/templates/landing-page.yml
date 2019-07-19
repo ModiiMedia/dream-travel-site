@@ -8,9 +8,6 @@ fields:
 - type: text
   name: type
   label: type
-- type: file
-  name: featured_image
-  label: featured_image
 - type: field_group
   name: hero_banner
   label: hero_banner
