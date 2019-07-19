@@ -4,7 +4,10 @@ hide_body: true
 fields:
 - type: number
   name: sponsor_id
-  label: sponsor_id
+  label: Sponsor ID
+  description: This is used to generate the sign up link on the DreamTrips page. So
+    that it automatically sets your ID as their sponsor.
 - type: text
   name: copyright_message
-  label: copyright_message
+  label: Copyright Message
+  description: Copyright message that appears at the bottom of the page
