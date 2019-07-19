@@ -74,9 +74,13 @@
         }
     }
 }
+.logo-container {
+    text-align: center;
+}
 .logo {
     text-align: center;
     color: white;
+    display: inline-block;
     &:hover {
         color: white;
     }
