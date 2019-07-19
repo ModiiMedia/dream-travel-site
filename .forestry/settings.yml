@@ -9,8 +9,8 @@ sections:
   label: Homepage
 upload_dir: assets/media
 public_path: "/media"
-front_matter_path: ''
-use_front_matter_path: false
+front_matter_path: media
+use_front_matter_path: true
 file_template: ":filename:"
 instant_preview: true
 build:
