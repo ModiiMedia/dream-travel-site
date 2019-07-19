@@ -8,10 +8,10 @@
         style="background-image: linear-gradient(179.74deg, rgba(0, 0, 0, 0.48) 0.48%, rgba(255, 255, 255, 0) 99.52%), url({{ $resized.RelPermalink }})"
     {{- end -}}>
     <div class="container">
-        <div class="logo">
+        <a href="/" class="logo">
             <h1 class="title">Dream Travel</h1>
             <div class="subtitle">Experience the World Together</div>
-        </div>
+        </a>
     </div>
     <div class="hero-content">
         <div class="color-bar is-flex">
@@ -29,7 +29,10 @@
                 </div>
             </div>            
         </div>        
-    </div>    
+    </div>
+    <div class="hero-button-container is-flex">
+        {{ partial "scroll-down-button" "form-box" }}        
+    </div>
 </section>
 {{- end -}}
 
@@ -43,13 +46,13 @@
     {{- end -}}>
     <div class="image-overlay"></div>
     <div class="container">
-        <div class="form-box">
+        <div class="form-box" id="form-box">
             {{ if not $cta.main_button.hide }}
                 {{ if $sponsor_id }}
                 <div class="content">
                     {{ $cta.main_button.heading | markdownify }}
                 </div>
-                    <a href="https://signup.worldventures.biz/member/account?sponsorId={{ $sponsor_id }}&pn=Retail&countryCode=US&locale=EN-US&source=&sourceReferenceId=" target="_blank" rel="nofollow" class="button is-large is-primary has-text-weight-bold">{{ $cta.main_button.button_text }}</a>
+                    <a href="https://signup.worldventures.biz/member/account?sponsorId={{ $sponsor_id }}&pn=Retail&countryCode=US&locale=EN-US" target="_blank" rel="nofollow" class="button is-large is-primary has-text-weight-bold">{{ $cta.main_button.button_text }}</a>
                     {{ else }}
                     <div class="error-box">
                         <div style="font-size: 1.5rem; font-weight: bold">ERROR!!!</div>

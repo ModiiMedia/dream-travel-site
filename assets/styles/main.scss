@@ -12,6 +12,11 @@ $info: #4583BD;
 @import './partials/dividing-line.scss';
 @import './partials/forms.scss';
 @import './partials/footer.scss';
+@import './partials/buttons.scss';
+
+html {
+    scroll-behavior: smooth;
+}
 
 body, button, input, select, textarea {
     font-family: 'Roboto', sans-serif;

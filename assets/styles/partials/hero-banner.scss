@@ -1,5 +1,5 @@
 .hero {
-    padding: 10rem 0;
+    padding: 5rem 0 10rem 0;
     background-size: cover;
     background-position: center;
     color: white;
@@ -76,6 +76,10 @@
 }
 .logo {
     text-align: center;
+    color: white;
+    &:hover {
+        color: white;
+    }
     .title {
         font-family: 'Abhaya Libre', serif;
         font-weight: 600;

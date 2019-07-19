@@ -1,0 +1,27 @@
+.scroll-down-button {
+    width: 6rem;
+    height: 6rem;
+    background: $info;
+    border-radius: 100px;
+    font-size: 3rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    padding-top: 0.5rem;
+    &:hover {
+        color: white;
+    }
+}
+
+.hero-button-container {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: -3rem;
+    justify-content: center;
+    @media(max-width: $desktop) {
+        display: none!important;
+    }
+}
