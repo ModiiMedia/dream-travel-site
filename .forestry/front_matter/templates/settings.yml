@@ -11,3 +11,5 @@ fields:
   name: copyright_message
   label: Copyright Message
   description: Copyright message that appears at the bottom of the page
+pages:
+- data/settings.yaml
