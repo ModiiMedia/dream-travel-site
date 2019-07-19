@@ -20,7 +20,8 @@ call_to_action:
   background_image: media/john-such-I2bCx_tzwh8-unsplash.jpg
 seo:
   meta_title: Dream Travel | Experience The World Together
-  meta_description: ''
-  social_image: ''
+  meta_description: Join the greatest travel club in the world. Want to be able to
+    on vacation without breaking the bank? Then you want to get connected with us.
+  social_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
 
 ---
