@@ -1,0 +1,10 @@
+---
+label: Settings
+hide_body: true
+fields:
+- type: number
+  name: sponsor_id
+  label: sponsor_id
+- type: text
+  name: copyright_message
+  label: copyright_message
