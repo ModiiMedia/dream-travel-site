@@ -81,3 +81,5 @@ fields:
   - type: text
     name: meta_description
     label: meta_description
+pages:
+- content/_index.md
