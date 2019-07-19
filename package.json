@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node importNodeModules && hugo server",
-    "build": "node importNodeModules && hugo --minify"
+    "get-modules": "node importNodeModules",
+    "start": "npm run get-modules && hugo server",
+    "build": "npm run get-modules && hugo --minify",
+    "preview:forestry": "npm run get-modules && hugo server -D -F -E --renderToDisk --port 8080 --bind 0.0.0.0"
   },
   "author": "",
   "license": "ISC",
