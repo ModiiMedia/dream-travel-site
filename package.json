@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node importNodeModules && hugo server"
+    "start": "node importNodeModules && hugo server",
+    "build": "node importNodeModules && hugo --minify"
   },
   "author": "",
   "license": "ISC",
