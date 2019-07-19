@@ -4,43 +4,60 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
 - type: text
   name: type
   label: type
+  hidden: true
+  default: landing-page
+  config:
+    required: true
 - type: field_group
   name: hero_banner
-  label: hero_banner
+  label: Hero Banner
   fields:
-  - type: text
-    name: banner_text
-    label: banner_text
+  - name: banner_text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Banner Text
   - type: text
     name: banner_video
-    label: banner_video
+    label: Banner Video
+    description: Paste your vimeo url here
   - type: file
     name: background_image
-    label: background_image
+    label: Background Image
+    description: Background image for the hero banner
 - type: field_group
   name: call_to_action
-  label: call_to_action
+  label: Call To Action
   fields:
   - type: field_group
     name: main_button
-    label: main_button
+    label: Main Button
     fields:
     - type: text
       name: heading
-      label: heading
+      label: Heading
     - type: text
       name: button_text
-      label: button_text
+      label: Button Text
+      config:
+        required: true
+      default: Get Started
     - type: boolean
       name: hide
-      label: hide
+      label: Hide
   - type: field_group
     name: contact_form
-    label: contact_form
+    label: Contact Form
     fields:
     - type: textarea
       name: heading
