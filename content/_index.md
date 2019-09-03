@@ -4,7 +4,7 @@ type: landing-page
 featured_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
 hero_banner:
   banner_text: "## Your Journey Starts **Here**"
-  banner_video: https://vimeo.com/341463608
+  banner_video: https://vimeo.com/user25313687/review/357661519/111a160791
   background_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
 call_to_action:
   main_button:
