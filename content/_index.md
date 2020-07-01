@@ -10,12 +10,12 @@ call_to_action:
   main_button:
     heading: "# ![](/media/pick-your-membership.JPG)Want to know more?"
     button_text: JOIN NOW
-    hide: false
+    hide: true
   contact_form:
     heading: |-
       ### Have some questions?
 
-      If you want to learn more, fill out the form below and we'll contact you!!!  Even better, just reach out to the person who got you on this webinar!!
+      If you want to learn more, fill out the form below and we'll contact you!!!  **EVEN BETTER**, just reach out to the person who got you on this webinar!!  They can answer ALL YOUR QUESTIONS!!
 
       ![](/media/pick-your-membership.JPG)
     hide: false
