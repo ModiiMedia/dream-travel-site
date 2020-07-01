@@ -15,7 +15,6 @@ public_path: "/media"
 front_matter_path: media
 use_front_matter_path: true
 file_template: ":filename:"
-instant_preview: true
 build:
   preview_env:
   - HUGO_ENV=staging
@@ -26,10 +25,4 @@ build:
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: npm run preview:forestry
-  publish_command: hugo -d public
-  publish_env:
-  - HUGO_ENV=production
-  - HUGO_VERSION=0.55.6
-  output_directory: public
-  preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
 version: 0.55.6
