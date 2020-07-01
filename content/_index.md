@@ -4,17 +4,20 @@ type: landing-page
 featured_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
 hero_banner:
   banner_text: "## Your Journey Starts **Here**"
-  banner_video: https://vimeo.com/357696126
+  banner_video: https://vimeo.com/433836452
   background_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
 call_to_action:
   main_button:
-    heading: "# Ready to Get Started?\n"
+    heading: "# ![](/media/pick-your-membership.JPG)Want to know more?"
     button_text: JOIN NOW
     hide: false
   contact_form:
-    heading: |
+    heading: |-
       ### Have some questions?
-      If you want to learn more, fill out the form below and we'll contact you!!!
+
+      If you want to learn more, fill out the form below and we'll contact you!!!  Even better, just reach out to the person who got you on this webinar!!
+
+      ![](/media/pick-your-membership.JPG)
     hide: false
   style: light
   background_image: media/john-such-I2bCx_tzwh8-unsplash.jpg
