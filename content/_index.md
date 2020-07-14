@@ -98,7 +98,7 @@ pricing_table:
       custom_icon: ''
     - description: DreamTrips Local
       icon_type: Font Awesome
-      font_awesome_icon: ''
+      font_awesome_icon: map-pin
       custom_icon: ''
     point_bonuses: |-
       * **140 Points** Enrollment
