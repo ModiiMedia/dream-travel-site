@@ -96,6 +96,10 @@ pricing_table:
       icon_type: Font Awesome
       font_awesome_icon: dollar-sign
       custom_icon: ''
+    - description: DreamTrips Local
+      icon_type: Font Awesome
+      font_awesome_icon: ''
+      custom_icon: ''
     point_bonuses: |-
       * **140 Points** Enrollment
       * **684 Points** Anniversary
