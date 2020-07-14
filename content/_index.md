@@ -22,6 +22,7 @@ call_to_action:
     hide: false
   style: light
   background_image: media/john-such-I2bCx_tzwh8-unsplash.jpg
+  featured_image: media/pick-your-membership.JPG
 seo:
   meta_title: Dream Travel | Experience The World Together
   meta_description: Join the greatest travel club in the world. Want to be able to
