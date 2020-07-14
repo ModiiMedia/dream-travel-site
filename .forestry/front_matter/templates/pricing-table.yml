@@ -95,10 +95,10 @@ fields:
         required: false
         options: []
         source:
-          type: simple
-          section: ''
-          file: 
-          path: 
+          type: documents
+          section: settings
+          file: data/settings.yaml
+          path: font_awesome_icons
       label: Icon Selection
       showOnly:
         field: icon_type
