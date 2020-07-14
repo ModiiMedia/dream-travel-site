@@ -119,7 +119,7 @@ fields:
       showOnly:
         field: icon_type
         value: Custom Upload
-      description: Upload a custom icon
+      description: Upload a custom icon. The image should be a PNG and should be square.
     config:
       min: 1
       max: 
