@@ -103,6 +103,47 @@ pricing_table:
     point_bonuses: |-
       * **140 Points** Enrollment
       * **684 Points** Anniversary
+  - name: Platinum
+    description: Everything Included In Gold
+    banner_image: media/outside-hotel-sunset-palm-trees.jpg
+    initial_payment: 299.99
+    monthly_cost: 99.99
+    features:
+    - description: Pre-Sale Access
+      icon_type: Font Awesome
+      font_awesome_icon: money-bill
+      custom_icon: ''
+    - description: Platinum Perks
+      icon_type: Font Awesome
+      font_awesome_icon: thumbs-up
+      custom_icon: ''
+    - description: Platinum DreamTrips
+      icon_type: Font Awesome
+      font_awesome_icon: gem
+      custom_icon: ''
+    - description: Emergency Evacuation
+      icon_type: Font Awesome
+      custom_icon: ''
+      font_awesome_icon: shield-alt
+    - description: Apply 50% More Points VS Gold
+      icon_type: Font Awesome
+      font_awesome_icon: smile-beam
+      custom_icon: ''
+    - description: Telemedicine
+      icon_type: Font Awesome
+      font_awesome_icon: laptop-medical
+      custom_icon: ''
+    - description: Travel Advisors
+      icon_type: Font Awesome
+      font_awesome_icon: users
+      custom_icon: ''
+    - icon_type: Font Awesome
+      font_awesome_icon: phone-alt
+      custom_icon: ''
+      description: 24/7 Concierge
+    point_bonuses: |-
+      * **200 Points** Enrollment
+      * **1,200 Points** on Anniversary
   hide: false
 
 ---
