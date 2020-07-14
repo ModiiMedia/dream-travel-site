@@ -121,6 +121,17 @@ fields:
       max: 
       labelField: 
     label: Features
+  - name: point_bonuses
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Point bonuses
+    description: Explain any point bonuses that may or may not come with this membership
+      plan
   config:
     min: 1
     max: 
