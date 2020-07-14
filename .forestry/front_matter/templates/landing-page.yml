@@ -45,6 +45,9 @@ fields:
     config: {}
     template: pricing-table
     label: Pricing Table
+  - name: hide
+    type: boolean
+    label: Hide
   label: Pricing Table
 - type: field_group
   name: call_to_action
