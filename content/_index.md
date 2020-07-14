@@ -69,6 +69,7 @@ pricing_table:
       font_awesome_icon: ticket-alt
       custom_icon: ''
     banner_image: media/hotel-bed-pillow.jpg
+    point_bonuses: "**0 Points**"
   hide: false
 
 ---
