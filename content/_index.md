@@ -86,7 +86,7 @@ pricing_table:
       custom_icon: ''
     - description: Anytime Escapes
       icon_type: Font Awesome
-      font_awesome_icon: calendar
+      font_awesome_icon: hiking
       custom_icon: ''
     - description: Luxury Residences
       icon_type: Font Awesome
