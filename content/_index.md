@@ -70,6 +70,35 @@ pricing_table:
       custom_icon: ''
     banner_image: media/hotel-bed-pillow.jpg
     point_bonuses: "**0 Points**"
+  - name: Gold
+    description: Everything Included In Silver
+    banner_image: media/sunglasses-on-the-beach.jpg
+    initial_payment: 199.99
+    monthly_cost: 56.99
+    features:
+    - description: Shop Online & Earn Travel
+      icon_type: Font Awesome
+      font_awesome_icon: shopping-cart
+      custom_icon: ''
+    - description: 5000+ DreamTrips
+      icon_type: Font Awesome
+      font_awesome_icon: wine-glass-alt
+      custom_icon: ''
+    - description: Anytime Escapes
+      icon_type: Font Awesome
+      font_awesome_icon: calendar
+      custom_icon: ''
+    - description: Luxury Residences
+      icon_type: Font Awesome
+      custom_icon: ''
+      font_awesome_icon: gem
+    - description: Purchase Unlimited DreamTrips & Golden Tickets
+      icon_type: Font Awesome
+      font_awesome_icon: dollar-sign
+      custom_icon: ''
+    point_bonuses: |-
+      * **140 Points** Enrollment
+      * **684 Points** Anniversary
   hide: false
 
 ---
