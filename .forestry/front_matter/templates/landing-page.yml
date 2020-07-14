@@ -95,6 +95,12 @@ fields:
     label: Background Image
     config:
       maxSize: '10'
+  - name: featured_image
+    type: file
+    config:
+      maxSize: 20
+    label: Featured Image
+    description: Image that will appear beside the call to action form
 - type: field_group
   name: seo
   label: SEO
