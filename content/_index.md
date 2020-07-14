@@ -31,7 +31,7 @@ pricing_table:
   primary_color: rgb(107, 1, 149)
   secondary_color: rgb(207, 23, 154)
   plans:
-  - name: Silver
+  - name: Silver!
     description: Plan your own travel from A to Z
     initial_payment: 24.99
     monthly_cost: 24.99
