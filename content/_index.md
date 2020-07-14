@@ -144,6 +144,55 @@ pricing_table:
     point_bonuses: |-
       * **200 Points** Enrollment
       * **1,200 Points** on Anniversary
+  - name: Titanium
+    description: Everything Included In Platinum
+    banner_image: media/fancy-vacation-cottage-village-villa.jpg
+    initial_payment: 999.99
+    monthly_cost: 199.99
+    features:
+    - description: Use 100% More Points VS Gold
+      icon_type: Font Awesome
+      font_awesome_icon: plus-circle
+      custom_icon: ''
+    - description: "$2000 Private Jet Credit"
+      icon_type: Font Awesome
+      font_awesome_icon: plane
+      custom_icon: ''
+    - description: "$1000 Yacht Credit"
+      icon_type: Font Awesome
+      custom_icon: ''
+      font_awesome_icon: ship
+    - description: Dedicated Concierge
+      icon_type: Font Awesome
+      font_awesome_icon: concierge-bell
+      custom_icon: ''
+    - description: Room Upgrades
+      icon_type: Font Awesome
+      custom_icon: ''
+      font_awesome_icon: check
+    - description: Luxury Homes / Resorts / Villas
+      icon_type: Font Awesome
+      font_awesome_icon: glass-cheers
+      custom_icon: ''
+    - description: Priority Access To Exclusive Events
+      icon_type: Font Awesome
+      font_awesome_icon: glass-martini
+      custom_icon: ''
+    - description: Sixt Platinum Status
+      icon_type: Font Awesome
+      font_awesome_icon: gem
+      custom_icon: ''
+    - description: Preferred Pricing to 1200+ Airport Lounges
+      icon_type: Font Awesome
+      custom_icon: ''
+      font_awesome_icon: plane-departure
+    - description: Global Visa Services & More
+      icon_type: Font Awesome
+      font_awesome_icon: passport
+      custom_icon: ''
+    point_bonuses: |-
+      * **800 Points** Enrollment
+      * **2,400 Points** on Anniversary
   hide: false
 
 ---
