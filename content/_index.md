@@ -97,7 +97,7 @@ pricing_table:
       font_awesome_icon: dollar-sign
       custom_icon: ''
     - description: DreamTrips Local
-      icon_type: Custom Upload
+      icon_type: Font Awesome
       font_awesome_icon: map-pin
       custom_icon: media/1_20x.png
     point_bonuses: |-
