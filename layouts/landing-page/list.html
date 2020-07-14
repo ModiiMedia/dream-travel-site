@@ -36,6 +36,10 @@
 </section>
 {{- end -}}
 
+{{ with .Params.pricing_table }}
+    {{ partial "pricing-table" . }}
+{{ end }}
+
 {{ $sponsor_id := $.Site.Data.settings.sponsor_id }}
 {{ $cta := .Params.call_to_action }}
 <section class="section {{ $cta.style }}" 
@@ -46,16 +50,7 @@
     {{- end -}}>
     <div class="image-overlay"></div>
     <div class="container">
-        <div class="columns is-vcentered is-variable is-8">
-            {{- with $cta.featured_image -}}
-            {{- $img := resources.Get . -}}
-            {{- $resize := $img.Resize "700x q70" -}}
-            <div class="column">
-                <figure class="image cta-image">
-                    <img src="{{ $resize.RelPermalink }}" alt="">
-                </figure>
-            </div>
-            {{ end }}
+        <div class="columns is-vcentered is-variable is-8 is-multiline">
             <div class="column">
                 <div class="form-box" id="form-box">
                     {{ if not $cta.main_button.hide }}

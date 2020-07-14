@@ -6,8 +6,13 @@ $info: #4583BD;
 @import './_dependencies/sass/base/_all.sass';
 @import './_dependencies/sass/form/_all.sass';
 @import './_dependencies/sass/grid/_all.sass';
+@import './_dependencies/sass/elements/title.sass';
+@import './_dependencies/sass/elements/box.sass';
 @import './_dependencies/sass/elements/content.sass';
+@import './_dependencies/sass/elements/image.sass';
 @import './_dependencies/sass/elements/button.sass';
+@import './_dependencies/sass/elements/icon.sass';
+@import './_dependencies/sass/components/card.sass';
 @import './partials/hero-banner.scss';
 @import './partials/dividing-line.scss';
 @import './partials/forms.scss';
@@ -39,6 +44,11 @@ body, button, input, select, textarea {
     bottom: 0;
     z-index: 0;
 }
+
+.has-text-weight-black {
+    font-weight: 900;
+}
+
 .section {
     position: relative;
     padding: 8rem 0;

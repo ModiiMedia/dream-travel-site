@@ -1,0 +1,133 @@
+{{ $primary := .primary_color }}
+{{ $secondary := .secondary_color }}
+{{ $linearGradient := print "120deg, " $primary ", " $secondary }}
+<style>
+    {{ with .background_image }}
+    {{- $img := resources.Get . -}}
+    {{- $resized := $img.Resize "1920x q70" -}}
+    .pricing-table-section {
+        background-image: url({{$resized.RelPermalink | safeCSS }});
+        background-size: cover;
+        background-position: center center;
+    }
+    {{ end }}
+    .pricing-table-section .has-text-primary {
+        color: {{ $primary | safeCSS }}!important;
+    }
+    .pricing-table-section .has-text-secondary {
+        color: {{ $secondary | safeCSS }}!important;
+    }
+    .pricing-table-section .image-overlay {
+        background-image: linear-gradient({{ $linearGradient | safeCSS }});
+        opacity: 0.75;
+    }
+    .pricing-table-section .image-overlay.text-overlay {
+        background: rgba(255, 255, 255, 0.65);
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+    }
+    .pricing-table-section .card {
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .content.has-text-white * {
+        color: white;
+    }
+    .point-box {
+        max-width: 200px;
+        padding: 0.5rem 1rem;
+        border: 2px dashed {{ $secondary | safeCSS }};
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .point-box .content :first-child {
+        margin-top: 0;
+    }
+    .point-box .content :last-child {
+        margin-bottom: 0;
+    }
+    .has-text-primary * {
+        color: {{ $primary | safeCSS }};
+    }
+    @media(max-width: 1024px) {
+        .pricing-table-section .pricing-table-heading {
+            padding-top: 4rem;
+        }
+    }
+</style>
+<section class="section pricing-table-section">
+    <div class="image-overlay"></div>
+    <div class="container" style="max-width: 1600px">
+        <div class="pricing-table-heading content is-size-4 has-text-white has-text-centered">{{ .heading | markdownify }}</div>
+        <div class="has-text-centered" style="padding-bottom: 4rem">
+            <a href="#form-box" class="button is-white is-large has-text-weight-bold is-outlined">Get Started</a>
+        </div>
+
+        <div class="columns is-multiline is-centered">
+            {{ range .plans }}
+                <div class="column is-one-quarter-fullhd is-one-third-desktop is-half-tablet is-full-mobile">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                {{ with .banner_image }}
+                                {{- $img := resources.Get . -}}
+                                {{- $resized := $img.Fill "700x350 q70" -}}
+                                    <img src="{{ $resized.RelPermalink }}" alt="">
+                                {{ end }}
+                                <div class="image-overlay text-overlay is-flex">
+                                    <div class="title has-text-centered is-uppercase">
+                                        <div><strong>DREAM</strong><span class="has-text-weight-normal">TRIPS</span></div>
+                                        <div>{{ .name }}</div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="subtitle has-text-secondary has-text-weight-bold has-text-centered">{{ .description }}</div>
+                            <ul>
+                                {{ range .features }}
+                                <li class="has-text-primary"> 
+                                    <span class="icon">
+                                        {{ if eq .icon_type "Custom Upload"}}
+                                            {{ with .custom_icon }}
+                                                {{ $img := resources.Get . }}
+                                                {{ $resized := $img.Resize "16x" }}
+                                                <figure class="image">
+                                                    <img src="{{ $resized.RelPermalink }}">
+                                                </figure>
+                                            {{ end }}
+                                        {{ else if .font_awesome_icon }}
+                                        <i class="fas fa-{{ .font_awesome_icon }}"></i>
+                                        {{ else }}
+                                        <i class="fas fa-home" style="opacity: 0;"></i>
+                                        {{ end }}
+                                    </span>
+                                    <span>
+                                        {{ .description }}
+                                    </span>
+                                    
+                                </li>
+                                {{ end }}
+                            </ul>
+                            <div class="has-text-primary is-size-1 has-text-weight-black has-text-centered" style="padding: 1.5rem 0 0 0;">
+                                ${{ .initial_payment }}<span class="is-size-6 has-text-secondary has-text-weight-bold">/ today</span>
+                            </div>
+                            <div class="has-text-primary is-size-3 has-text-weight-black has-text-centered">
+                                ${{ .monthly_cost }}<span class="is-size-7 has-text-secondary has-text-weight-bold">/ monthly</span>
+                            </div>
+                            <div class="point-box has-text-primary is-size-7" style="margin-top: 2rem">
+                                <div class="content">
+                                    {{ .point_bonuses | markdownify }}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
