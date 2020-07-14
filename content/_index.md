@@ -11,7 +11,7 @@ call_to_action:
     heading: '# ![](/media/pick-your-membership.JPG "Pick Your Memberhip")Want to
       know more?'
     button_text: JOIN NOW
-    hide: true
+    hide: false
   contact_form:
     heading: |-
       ### Have some questions?
