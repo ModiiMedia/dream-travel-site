@@ -17,8 +17,6 @@ call_to_action:
       ### Have some questions?
 
       If you want to learn more, fill out the form below and we'll contact you!!!  **EVEN BETTER**, just reach out to the person who got you on this webinar!!  They can answer ALL YOUR QUESTIONS!!
-
-      ![](/media/pick-your-membership.JPG)
     hide: false
   style: light
   background_image: media/john-such-I2bCx_tzwh8-unsplash.jpg
