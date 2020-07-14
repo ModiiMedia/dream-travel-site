@@ -108,6 +108,9 @@ fields:
       showOnly:
         field: icon_type
         value: Font Awesome
+      description: Select a Font Awesome Icon. A complete list of icons can be viewed
+        <a href="https://fontawesome.com/icons?d=gallery&amp;s=solid&amp;m=free" title=""
+        target="_blank">here</a>.
     - name: custom_icon
       type: file
       config:
