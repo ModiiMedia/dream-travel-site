@@ -8,8 +8,7 @@ hero_banner:
   background_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
 call_to_action:
   main_button:
-    heading: '# ![](/media/pick-your-membership.JPG "Pick Your Memberhip")Want to
-      know more?'
+    heading: "# Want to know more?"
     button_text: JOIN NOW
     hide: true
   contact_form:
