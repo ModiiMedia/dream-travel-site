@@ -37,9 +37,14 @@ fields:
     label: Background Image
     description: Background image for the hero banner
 - name: pricing_table
-  type: include
+  type: field_group
   config: {}
-  template: pricing-table
+  fields:
+  - name: pricing_table
+    type: include
+    config: {}
+    template: pricing-table
+    label: Pricing Table
   label: Pricing Table
 - type: field_group
   name: call_to_action
