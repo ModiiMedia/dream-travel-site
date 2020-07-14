@@ -44,6 +44,11 @@ fields:
     config:
       required: false
     label: Description
+  - name: banner_image
+    type: file
+    config:
+      maxSize: 20
+    label: Banner Image
   - name: initial_payment
     type: number
     label: Initial Payment
@@ -74,11 +79,6 @@ fields:
       config:
         required: true
       label: Description
-    - name: banner_image
-      type: file
-      config:
-        maxSize: 20
-      label: Banner Image
     - name: icon_type
       type: select
       default: Font Awesome
