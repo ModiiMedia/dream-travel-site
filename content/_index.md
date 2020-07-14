@@ -68,6 +68,7 @@ pricing_table:
       icon_type: Font Awesome
       font_awesome_icon: ticket-alt
       custom_icon: ''
+    banner_image: media/hotel-bed-pillow.jpg
   hide: false
 
 ---
