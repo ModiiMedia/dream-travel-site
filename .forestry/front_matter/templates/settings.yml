@@ -11,5 +11,13 @@ fields:
   name: copyright_message
   label: Copyright Message
   description: Copyright message that appears at the bottom of the page
+- name: font_awesome_icons
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: font_awesome_icons
+  hidden: true
 pages:
 - data/settings.yaml
