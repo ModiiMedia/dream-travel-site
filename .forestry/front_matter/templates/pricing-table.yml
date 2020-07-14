@@ -119,6 +119,7 @@ fields:
       showOnly:
         field: icon_type
         value: Custom Upload
+      description: Upload a custom icon
     config:
       min: 1
       max: 
