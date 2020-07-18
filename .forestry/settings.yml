@@ -2,31 +2,31 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: static/admin
-webhook_url: 
+webhook_url:
 sections:
-- type: document
-  path: content/_index.md
-  label: Homepage
-- type: document
-  path: data/settings.yaml
-  label: Settings
-- type: document
-  path: data/icons.yaml
-  label: Icons
-  read_only: true
+    - type: document
+      path: content/_index.md
+      label: Homepage
+    - type: document
+      path: data/settings.yaml
+      label: Settings
+    - type: document
+      path: data/icons.yaml
+      label: Icons
+      read_only: false
 upload_dir: assets/media
 public_path: "/media"
 front_matter_path: media
 use_front_matter_path: true
 file_template: ":filename:"
 build:
-  preview_env:
-  - HUGO_ENV=staging
-  - HUGO_VERSION=0.55.6
-  preview_output_directory: public
-  install_dependencies_command: npm install
-  preview_docker_image: forestryio/hugo:node10
-  mount_path: "/srv"
-  working_dir: "/srv"
-  instant_preview_command: npm run preview:forestry
+    preview_env:
+        - HUGO_ENV=staging
+        - HUGO_VERSION=0.55.6
+    preview_output_directory: public
+    install_dependencies_command: npm install
+    preview_docker_image: forestryio/hugo:node10
+    mount_path: "/srv"
+    working_dir: "/srv"
+    instant_preview_command: npm run preview:forestry
 version: 0.55.6
