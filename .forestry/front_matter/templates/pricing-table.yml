@@ -141,3 +141,9 @@ fields:
     max: 
     labelField: 
   label: Plans
+- name: button_text
+  type: text
+  config:
+    required: false
+  label: Button Text
+  description: Leaving blank with hide the pricing table button.
