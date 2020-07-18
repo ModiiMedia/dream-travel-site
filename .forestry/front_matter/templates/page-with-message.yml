@@ -8,3 +8,5 @@ fields:
   config:
     required: false
   label: Message
+pages:
+- data/icons.yaml
