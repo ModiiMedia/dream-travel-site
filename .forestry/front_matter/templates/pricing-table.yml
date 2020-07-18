@@ -103,7 +103,7 @@ fields:
           type: documents
           section: icons
           file: data/icons.yaml
-          path: fa_icons
+          path: fa_icons_solid
       label: Icon Selection
       showOnly:
         field: icon_type
