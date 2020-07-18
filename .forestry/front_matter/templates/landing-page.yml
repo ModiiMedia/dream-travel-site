@@ -103,12 +103,6 @@ fields:
         file: 
         path: 
     label: Style
-  - name: featured_image
-    type: file
-    config:
-      maxSize: 20
-    label: Featured Image
-    description: Image that will appear beside the call to action form
   - type: file
     name: background_image
     label: Background Image
