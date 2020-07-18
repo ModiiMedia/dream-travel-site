@@ -13,6 +13,7 @@ sections:
 - type: document
   path: data/icons.yaml
   label: Icons
+  read_only: true
 upload_dir: assets/media
 public_path: "/media"
 front_matter_path: media
