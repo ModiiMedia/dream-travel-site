@@ -7,6 +7,6 @@ fields:
   type: text
   config:
     required: false
-  label: Message
+  label: Message From Josh
 pages:
 - data/icons.yaml
