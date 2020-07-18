@@ -1,4 +1,10 @@
 ---
-label: Page With Message
+label: Blank Page With Message
 hide_body: true
-fields: []
+display_field: message
+fields:
+- name: message
+  type: text
+  config:
+    required: false
+  label: Message
