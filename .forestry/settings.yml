@@ -13,7 +13,6 @@ sections:
 - type: document
   path: data/icons.yaml
   label: Icons
-  match: "**/*"
   read_only: true
 upload_dir: assets/media
 public_path: "/media"
