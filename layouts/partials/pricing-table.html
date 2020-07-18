@@ -36,7 +36,8 @@
         color: white;
     }
     .point-box {
-        max-width: 200px;
+        position: relative;
+        max-width: 250px;
         padding: 0.5rem 1rem;
         border: 2px dashed {{ $secondary | safeCSS }};
         border-radius: 10px;
@@ -63,7 +64,12 @@
     <div class="container" style="max-width: 1600px">
         <div class="pricing-table-heading content is-size-4 has-text-white has-text-centered">{{ .heading | markdownify }}</div>
         <div class="has-text-centered" style="padding-bottom: 4rem">
-            <a href="#form-box" class="button is-white is-large has-text-weight-bold is-outlined">Get Started</a>
+            {{ with .button_text }}
+                <a href="#form-box" 
+                    class="button is-white is-large has-text-weight-bold is-outlined">
+                    {{ . }}
+                </a>
+            {{ end }}
         </div>
 
         <div class="columns is-multiline is-centered">
@@ -119,9 +125,21 @@
                                 ${{ .monthly_cost }}<span class="is-size-7 has-text-secondary has-text-weight-bold">/ monthly</span>
                             </div>
                             <div class="point-box has-text-primary is-size-7" style="margin-top: 2rem">
-                                <div class="content">
-                                    {{ .point_bonuses | markdownify }}
+                                <div class="columns is-mobile is-vcentered is-variable is-1">
+                                    <div class="column is-narrow">
+                                        {{ $cloudImg := resources.Get "media/dreamtrips-cloud.png" }}
+                                        {{ $cloudResized := $cloudImg.Resize "35x" }}
+                                        <figure class="image">
+                                            <img src="{{ $cloudResized.RelPermalink }}" alt="">
+                                        </figure>    
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            {{ .point_bonuses | markdownify }}
+                                        </div>
+                                    </div>
                                 </div>
+                                
                             </div>
                         </div>
 
