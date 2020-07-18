@@ -10,9 +10,6 @@ sections:
 - type: document
   path: data/settings.yaml
   label: Settings
-- type: document
-  path: data/icons.yaml
-  label: Icons
 upload_dir: assets/media
 public_path: "/media"
 front_matter_path: media
