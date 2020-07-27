@@ -92,7 +92,7 @@ pricing_table:
       icon_type: Font Awesome
       custom_icon: ''
       font_awesome_icon: gem
-    - description: Purchase Unlimited Passport To Savings Trip
+    - description: Purchase Unlimited Passport To Savings Trips
       icon_type: Font Awesome
       font_awesome_icon: dollar-sign
       custom_icon: ''
