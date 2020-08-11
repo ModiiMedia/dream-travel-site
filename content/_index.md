@@ -9,11 +9,11 @@ hero_banner:
     banner_videos:
         - speaker_name: Linda Muth
           speaker_title: Naval Oficer / Financial Advisor
-          speaker_photo: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
+          speaker_photo: media/portrait-linda-muth.jpg
           video_url: https://vimeo.com/443900752
         - speaker_name: Pat Villegas
           speaker_title: Police Officer
-          speaker_photo: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
+          speaker_photo: media/portrait-pat-villegas.jpg
           video_url: https://vimeo.com/443853939
 call_to_action:
     main_button:
