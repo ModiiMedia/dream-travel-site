@@ -28,14 +28,43 @@ fields:
       schema:
         format: markdown
     label: Banner Text
-  - type: text
-    name: banner_video
-    label: Banner Video
-    description: Paste your vimeo url here
   - type: file
     name: background_image
     label: Background Image
     description: Background image for the hero banner
+  - type: text
+    name: banner_video
+    label: Banner Video
+    description: Paste your vimeo url here
+  - name: banner_videos
+    type: field_group_list
+    fields:
+    - name: speaker_name
+      type: text
+      config:
+        required: true
+      label: Speaker Name
+    - name: speaker_title
+      type: text
+      config:
+        required: false
+      label: Speaker Title
+    - name: speaker_photo
+      type: file
+      config:
+        maxSize: 64
+      label: Speaker Photo
+    - name: video_url
+      type: text
+      config:
+        required: false
+      label: Video Url
+      description: Copy and paste the vimeo link here
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Banner Videos
 - name: pricing_table
   type: field_group
   config: {}
