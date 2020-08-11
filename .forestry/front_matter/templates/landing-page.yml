@@ -32,10 +32,27 @@ fields:
     name: background_image
     label: Background Image
     description: Background image for the hero banner
+  - name: banner_template
+    type: select
+    default: single video
+    config:
+      required: true
+      options:
+      - single video
+      - multiple videos
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Banner Template
   - type: text
     name: banner_video
     label: Banner Video
     description: Paste your vimeo url here
+    showOnly:
+      field: banner_template
+      value: single video
   - name: banner_videos
     type: field_group_list
     fields:
@@ -65,6 +82,9 @@ fields:
       max: 
       labelField: 
     label: Banner Videos
+    showOnly:
+      field: banner_template
+      value: multiple videos
 - name: pricing_table
   type: field_group
   config: {}
