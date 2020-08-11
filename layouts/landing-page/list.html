@@ -14,6 +14,30 @@
         </a>
     </div>
     <div class="hero-content">
+        <div class="container">
+            {{ partial "video-selection-grid.html" .banner_videos }}    
+        </div>
+    </div>
+    <div class="hero-button-container is-flex">
+        {{ partial "scroll-down-button" "form-box" }}        
+    </div>
+</section>
+{{- end -}}
+
+<!-- {{- with .Params.hero_banner }}
+<section class="hero" 
+    {{- with .background_image -}}
+        {{- $img := resources.Get . -}}
+        {{- $resized := $img.Resize "1920x q70" -}}
+        style="background-image: linear-gradient(179.74deg, rgba(0, 0, 0, 0.48) 0.48%, rgba(255, 255, 255, 0) 99.52%), url({{ $resized.RelPermalink }})"
+    {{- end -}}>
+    <div class="container logo-container">
+        <a href="/" class="logo">
+            <h1 class="title">Dream Travel</h1>
+            <div class="subtitle">Experience the World Together</div>
+        </a>
+    </div>
+    <div class="hero-content">
         <div class="color-bar is-flex">
             <div class="bar" id="hero-banner-bar"></div>
         </div>
@@ -34,7 +58,7 @@
         {{ partial "scroll-down-button" "form-box" }}        
     </div>
 </section>
-{{- end -}}
+{{- end -}} -->
 
 {{ with .Params.pricing_table }}
     {{ partial "pricing-table" . }}
