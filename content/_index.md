@@ -74,7 +74,7 @@ pricing_table:
                 icon_type: Font Awesome
                 font_awesome_icon: wine-glass
                 custom_icon: ""
-              - description: Purchase One Golden Ticket
+              - description: Purchase One Passport To Savings Trip
                 icon_type: Font Awesome
                 font_awesome_icon: ticket-alt
                 custom_icon: ""
@@ -102,7 +102,7 @@ pricing_table:
                 icon_type: Font Awesome
                 custom_icon: ""
                 font_awesome_icon: gem
-              - description: Purchase Unlimited DreamTrips & Golden Tickets
+              - description: Purchase Unlimited Passport To Savings Trips
                 icon_type: Font Awesome
                 font_awesome_icon: dollar-sign
                 custom_icon: ""
