@@ -1,0 +1,27 @@
+.vsg-speaker-box {
+	background: #333333;
+	padding: 5px;
+	cursor: pointer;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+	transition: box-shadow 300ms ease;
+	&:hover {
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.75);
+		.vsg-speaker-photo {
+			.image-overlay {
+				opacity: 0.5;
+			}
+		}
+	}
+	.vsg-speaker-photo {
+		.image-overlay {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			transition: opacity 300ms ease;
+			&.now-playing {
+				opacity: 0.5;
+			}
+		}
+	}
+}

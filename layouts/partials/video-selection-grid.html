@@ -1,0 +1,105 @@
+<div id="vsg-play-center" class="columns is-variable is-5 is-vcentered is-hidden">
+    <div class="column is-one-quarter">
+        <div class="buttons is-centered">
+            <button class="button is-light has-text-weight-bold vsg-reset"><span>Change Video</span><span class="icon">
+                <i class="fas fa-random"></i>
+            </span></button>
+        </div>
+        <div class="vsg-speaker-box vsg-reset">
+            <figure class="image is-1by1 vsg-speaker-photo">
+                <img id="vsg-play-center-photo" src="" alt="">
+                <div class="image-overlay has-background-black now-playing">
+                    Now Playing
+                </div>
+            </figure>
+            <div style="padding: 20px 10px">
+                    <div id="vsg-play-center-name" class="title has-text-white is-size-4">
+                    </div>
+                    <div id="vsg-play-center-title" class="subtitle has-text-white is-size-6">
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="column is-flex">
+        <div style="padding:56.6% 0 0 0; width: 100%; position:relative; background: black;">
+            <iframe id="vsg-play-center-video" src="" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</div>
+<div id="vsg-video-selector" class="">
+
+    <div class="title is-size-2 has-text-white has-text-centered">Your Journey Starts Here</div>
+    <div class="columns is-centered is-mobile is-multiline">
+        {{ range . }}
+            <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+                {{ partial "vsg-speaker-box.html" . }}
+            </div>
+        {{ end }}
+    </div>
+</div>
+
+<script>
+    const vsgActivators = document.querySelectorAll('.vsg-speaker-box.clickable');
+    const vsgReseters = document.querySelectorAll('.vsg-reset');
+    const vsgPlayCenter = document.querySelector('#vsg-play-center');
+    const vsgVideoSelector = document.querySelector('#vsg-video-selector');
+    const vsgPhoto = document.querySelector('#vsg-play-center-photo');
+    const vsgName = document.querySelector('#vsg-play-center-name');
+    const vsgTitle = document.querySelector('#vsg-play-center-title');
+    const vsgVideo = document.querySelector('#vsg-play-center-video');
+
+    const getEmbedCodeFromVideoUrl = (url) => {
+        if(!url) {
+            return null
+        }
+        const regExp = /^.*(vimeo\.com\/)((channels\/[A-z]+\/)|(groups\/[A-z]+\/videos\/))?([0-9]+)/;
+        const parsedUrl = regExp.exec(url);
+        const id = parsedUrl[5];
+        return `https:\/\/player.vimeo.com/video/${id}?title=0&amp;byline=0&amp;portrait=0&amp;badge=0;autoplay=1`;
+    };
+
+    const isMobileSizeWindow = () => {
+        const width = window.innerWidth
+        if(width <= 770) {
+            return true
+        }
+        return false
+    }
+
+    const activateVsgPlayCenter = (element) => {
+        vsgPlayCenter.classList.remove('is-hidden');
+        vsgVideoSelector.classList.add('is-hidden');
+        const {video, speakerName, speakerTitle, speakerPhoto} = element.dataset;
+        vsgName.innerHTML = speakerName;
+        vsgTitle.innerHTML = speakerTitle;
+        vsgPhoto.src = speakerPhoto;
+        vsgVideo.src = getEmbedCodeFromVideoUrl(video);
+        if(isMobileSizeWindow()) {
+            vsgVideo.scrollIntoView()
+        }
+    }
+    
+    const resetVsgPlayCenter = () => {
+        vsgPlayCenter.classList.add('is-hidden')
+        vsgVideoSelector.classList.remove('is-hidden')
+        vsgName.innerHTML = ''
+        vsgTitle.innerHTML = ''
+        vsgPhoto.src = ''
+        vsgVideo.src = ''
+    }
+
+    for(let i = 0; i < vsgActivators.length; i++) {
+        const item = vsgActivators[i];
+        item.addEventListener('click', function() {
+            activateVsgPlayCenter(this);
+        });
+    };
+
+    for(let i = 0; i < i < vsgReseters.length; i++) {
+        const item = vsgReseters[i]
+        item.addEventListener('click', function() {
+            resetVsgPlayCenter();
+        })
+    };
+
+</script>
