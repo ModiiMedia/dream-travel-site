@@ -14,7 +14,7 @@ hero_banner:
   - speaker_name: Marty Taylor
     speaker_title: Naval Officer / School Teacher
     speaker_photo: media/portrait-marty-taylor.jpg
-    video_url: https://vimeo.com/446344408
+    video_url: https://vimeo.com/446346789
   - speaker_name: Pat Villegas
     speaker_title: Police Officer
     speaker_photo: media/portrait-pat-villegas.jpg
