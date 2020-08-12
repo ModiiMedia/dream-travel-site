@@ -11,6 +11,11 @@
                 <div class="image-overlay has-background-black now-playing">
                     Now Playing
                 </div>
+                <div id="vsg-play-center-special-label" class="vsg-speaker-box-special-label is-hidden">
+                    <div class="special-label-left"></div>
+                    <div class="special-label-right"></div>
+                    <div id="vsg-play-center-special-label-text"></div>
+                </div>
             </figure>
             <div style="padding: 20px 10px">
                 <div class="is-hidden-desktop is-hidden-tablet is-size-7" style="margin-bottom: 1rem;">Now Playing</div>
@@ -30,7 +35,7 @@
 <div id="vsg-video-selector" class="">
     <div class="columns is-centered is-mobile is-multiline">
         {{ range . }}
-            <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+            <div class="column is-one-quarter-desktop is-half-tablet is-full-mobile has-text-centered">
                 {{ partial "vsg-speaker-box.html" . }}
             </div>
         {{ end }}
@@ -46,6 +51,9 @@
     const vsgName = document.querySelector('#vsg-play-center-name');
     const vsgTitle = document.querySelector('#vsg-play-center-title');
     const vsgVideo = document.querySelector('#vsg-play-center-video');
+    const vsgSpecialLabel = document.querySelector('#vsg-play-center-special-label')
+    const vsgSpecialLabelText = document.querySelector('#vsg-play-center-special-label-text')
+    const vsgContainer = document.querySelector('#video-selection-grid-container')
 
     const getEmbedCodeFromVideoUrl = (url) => {
         if(!url) {
@@ -68,11 +76,18 @@
     const activateVsgPlayCenter = (element) => {
         vsgPlayCenter.classList.remove('is-hidden');
         vsgVideoSelector.classList.add('is-hidden');
-        const {video, speakerName, speakerTitle, speakerPhoto} = element.dataset;
+        const {video, speakerName, speakerTitle, speakerPhoto, specialLabel} = element.dataset;
         vsgName.innerHTML = speakerName;
         vsgTitle.innerHTML = speakerTitle;
         vsgPhoto.src = speakerPhoto;
         vsgVideo.src = getEmbedCodeFromVideoUrl(video);
+        if(specialLabel && specialLabel.length) {
+            vsgSpecialLabel.classList.remove('is-hidden')
+            vsgSpecialLabelText.innerHTML = specialLabel
+        }
+        document
+            .querySelector("#hero-banner-content-multiple-videos")
+            .scrollIntoView({behavior: "smooth", block: "start"})
     }
     
     const resetVsgPlayCenter = () => {
@@ -82,6 +97,8 @@
         vsgTitle.innerHTML = ''
         vsgPhoto.src = ''
         vsgVideo.src = ''
+        vsgSpecialLabel.classList.add('is-hidden')
+        vsgSpecialLabelText.innerHTML = ''
     }
 
     for(let i = 0; i < vsgActivators.length; i++) {

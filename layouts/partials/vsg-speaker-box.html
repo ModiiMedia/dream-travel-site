@@ -1,35 +1,42 @@
 {{ $name := .speaker_name }}
 {{ $title := .speaker_title }}
-<div 
-    class="has-box-shadow vsg-speaker-box clickable"
-    data-video="{{ .video_url }}"
-    data-speaker-name="{{ .speaker_name }}" 
-    data-speaker-title="{{ .speaker_title }}" 
-    data-speaker-photo="
-        {{- with .speaker_photo -}}
-            {{- $img := resources.Get . -}}
-            {{- $resized := $img.Fill "700x700 q70" -}}
-            {{- $resized.RelPermalink -}}
-        {{- end -}}">
-    <figure class="image is-1by1 vsg-speaker-photo">
-        {{ with .speaker_photo }}
-            {{- $img := resources.Get . -}}
-            {{- $resized := $img.Fill "700x700 q70" -}}
-            <img src="{{ $resized.RelPermalink }}" alt="Photo of {{ $name }}">
-        {{ end }}
-        <div class="image-overlay is-flex has-background-black" style="justify-content: center; align-items: center;">
-            <span class="icon has-text-white is-size-1">
-                <i class="fas fa-play"></i>
-            </span>
-        </div>
-    </figure>
-    <div style="padding: 20px 10px">
-        <div class="title has-text-white is-size-4">
-            {{ $name }}
-        </div>
-        <div class="subtitle has-text-white is-size-6">
-            {{ $title }}
-        </div>
-    </div>
-</div>
+{{ $label := .special_label }}
+    <div 
+        class="has-box-shadow vsg-speaker-box clickable"
+        data-video="{{ .video_url }}"
+        data-speaker-name="{{ .speaker_name }}" 
+        data-speaker-title="{{ .speaker_title }}" 
+        data-speaker-photo="
+            {{- with .speaker_photo -}}
+                {{- $img := resources.Get . -}}
+                {{- $resized := $img.Fill "700x700 q70" -}}
+                {{- $resized.RelPermalink -}}
+            {{- end -}}"
+        data-special-label="{{ $label }}">
+        <figure class="image is-1by1 vsg-speaker-photo is-relative">
+            {{ with .speaker_photo }}
+                {{- $img := resources.Get . -}}
+                {{- $resized := $img.Fill "700x700 q70" -}}
+                <img src="{{ $resized.RelPermalink }}" alt="Photo of {{ $name }}">
+            {{ end }}
+            <div class="image-overlay is-flex has-background-black" style="justify-content: center; align-items: center;">
+                <span class="icon has-text-white is-size-1">
+                    <i class="fas fa-play"></i>
+                </span>
+            </div>
+            <div class="{{ if $label }}vsg-speaker-box-special-label{{ else }}is-hidden{{ end }}">
+                <div class="special-label-left"></div>
+                <div class="special-label-right"></div>
+                {{ $label }}
+            </div>
+        </figure>
 
+        <div style="padding: 20px 10px">
+            <div class="title has-text-white is-size-4">
+                {{ $name }}
+            </div>
+            <div class="subtitle has-text-white is-size-6">
+                {{ $title }}
+            </div>
+        </div>
+</div>

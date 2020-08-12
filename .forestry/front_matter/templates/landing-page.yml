@@ -2,176 +2,182 @@
 label: Landing Page
 hide_body: true
 fields:
-- type: text
-  name: title
-  label: Title
-  config:
-    required: true
-  hidden: true
-- type: text
-  name: type
-  label: type
-  hidden: true
-  default: landing-page
-  config:
-    required: true
-- type: field_group
-  name: hero_banner
-  label: Hero Banner
-  fields:
-  - name: banner_text
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Banner Text
-  - type: file
-    name: background_image
-    label: Background Image
-    description: Background image for the hero banner
-  - name: banner_template
-    type: select
-    default: single video
-    config:
-      required: true
-      options:
-      - single video
-      - multiple videos
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Banner Template
-  - type: text
-    name: banner_video
-    label: Banner Video
-    description: Paste your vimeo url here
-    showOnly:
-      field: banner_template
-      value: single video
-  - name: banner_videos
-    type: field_group_list
-    fields:
-    - name: speaker_name
-      type: text
-      config:
-        required: true
-      label: Speaker Name
-    - name: speaker_title
-      type: text
-      config:
-        required: false
-      label: Speaker Title
-    - name: speaker_photo
-      type: file
-      config:
-        maxSize: 64
-      label: Speaker Photo
-    - name: video_url
-      type: text
-      config:
-        required: false
-      label: Video Url
-      description: Copy and paste the vimeo link here
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: Banner Videos
-    showOnly:
-      field: banner_template
-      value: multiple videos
-- name: pricing_table
-  type: field_group
-  config: {}
-  fields:
-  - name: pricing_table
-    type: include
-    config: {}
-    template: pricing-table
-    label: Pricing Table
-  - name: hide
-    type: boolean
-    label: Hide
-  label: Pricing Table
-- type: field_group
-  name: call_to_action
-  label: Call To Action
-  fields:
-  - type: field_group
-    name: main_button
-    label: Main Button
-    fields:
-    - name: heading
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: markdown
-      label: Heading
     - type: text
-      name: button_text
-      label: Button Text
+      name: title
+      label: Title
       config:
-        required: true
-      default: Get Started
-    - type: boolean
-      name: hide
-      label: Hide
-  - type: field_group
-    name: contact_form
-    label: Contact Form
-    fields:
-    - type: textarea
-      name: heading
-      label: Heading
+          required: true
+      hidden: true
+    - type: text
+      name: type
+      label: type
+      hidden: true
+      default: landing-page
       config:
-        wysiwyg: true
-        schema:
-          format: markdown
-    - type: boolean
-      name: hide
-      label: Hide
-  - name: style
-    type: select
-    default: light
-    config:
-      required: true
-      options:
-      - light
-      - dark
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Style
-  - type: file
-    name: background_image
-    label: Background Image
-    config:
-      maxSize: '10'
-- type: field_group
-  name: seo
-  label: SEO
-  fields:
-  - type: text
-    name: meta_title
-    label: Meta Title
-  - type: text
-    name: meta_description
-    label: Meta Description
-  - name: social_image
-    type: file
-    config:
-      maxSize: '10'
-    label: Social Image
-    description: Image that appears when sharing on social media
+          required: true
+    - type: field_group
+      name: hero_banner
+      label: Hero Banner
+      fields:
+          - name: banner_text
+            type: textarea
+            default: ""
+            config:
+                required: false
+                wysiwyg: true
+                schema:
+                    format: markdown
+            label: Banner Text
+          - type: file
+            name: background_image
+            label: Background Image
+            description: Background image for the hero banner
+          - name: banner_template
+            type: select
+            default: single video
+            config:
+                required: true
+                options:
+                    - single video
+                    - multiple videos
+                source:
+                    type: simple
+                    section:
+                    file:
+                    path:
+            label: Banner Template
+          - type: text
+            name: banner_video
+            label: Banner Video
+            description: Paste your vimeo url here
+            showOnly:
+                field: banner_template
+                value: single video
+          - name: banner_videos
+            type: field_group_list
+            fields:
+                - name: speaker_name
+                  type: text
+                  config:
+                      required: true
+                  label: Speaker Name
+                - name: speaker_title
+                  type: text
+                  config:
+                      required: false
+                  label: Speaker Title
+                - name: speaker_photo
+                  type: file
+                  config:
+                      maxSize: 64
+                  label: Speaker Photo
+                - name: video_url
+                  type: text
+                  config:
+                      required: false
+                  label: Video Url
+                  description: Copy and paste the vimeo link here
+                - name: special_label
+                  label: Special Label
+                  type: text
+                  config:
+                      required: false
+                  description: A special label field for when you want to show some additional information about the video or want to make it stand out.
+            config:
+                min:
+                max:
+                labelField:
+            label: Banner Videos
+            showOnly:
+                field: banner_template
+                value: multiple videos
+    - name: pricing_table
+      type: field_group
+      config: {}
+      fields:
+          - name: pricing_table
+            type: include
+            config: {}
+            template: pricing-table
+            label: Pricing Table
+          - name: hide
+            type: boolean
+            label: Hide
+      label: Pricing Table
+    - type: field_group
+      name: call_to_action
+      label: Call To Action
+      fields:
+          - type: field_group
+            name: main_button
+            label: Main Button
+            fields:
+                - name: heading
+                  type: textarea
+                  default: ""
+                  config:
+                      required: false
+                      wysiwyg: true
+                      schema:
+                          format: markdown
+                  label: Heading
+                - type: text
+                  name: button_text
+                  label: Button Text
+                  config:
+                      required: true
+                  default: Get Started
+                - type: boolean
+                  name: hide
+                  label: Hide
+          - type: field_group
+            name: contact_form
+            label: Contact Form
+            fields:
+                - type: textarea
+                  name: heading
+                  label: Heading
+                  config:
+                      wysiwyg: true
+                      schema:
+                          format: markdown
+                - type: boolean
+                  name: hide
+                  label: Hide
+          - name: style
+            type: select
+            default: light
+            config:
+                required: true
+                options:
+                    - light
+                    - dark
+                source:
+                    type: simple
+                    section:
+                    file:
+                    path:
+            label: Style
+          - type: file
+            name: background_image
+            label: Background Image
+            config:
+                maxSize: "10"
+    - type: field_group
+      name: seo
+      label: SEO
+      fields:
+          - type: text
+            name: meta_title
+            label: Meta Title
+          - type: text
+            name: meta_description
+            label: Meta Description
+          - name: social_image
+            type: file
+            config:
+                maxSize: "10"
+            label: Social Image
+            description: Image that appears when sharing on social media
 pages:
-- content/_index.md
+    - content/_index.md

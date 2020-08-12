@@ -1,4 +1,5 @@
 .vsg-speaker-box {
+	position: relative;
 	background: #333333;
 	padding: 5px;
 	cursor: pointer;
@@ -23,5 +24,34 @@
 				opacity: 0.5;
 			}
 		}
+	}
+}
+
+.vsg-speaker-box-special-label {
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	right: -15px;
+	left: -15px;
+	padding: 5px 10px;
+	font-size: 1rem;
+	color: $dark;
+	z-index: 10;
+	background: gold;
+	.special-label-left {
+		position: absolute;
+		left: -10px;
+		top: -10px;
+		border-left: 10px solid transparent;
+		border-right: 10px solid rgb(184, 156, 0);
+		border-top: 10px solid transparent;
+	}
+	.special-label-right {
+		position: absolute;
+		right: -10px;
+		top: -10px;
+		border-left: 10px solid rgb(184, 156, 0);
+		border-right: 10px solid transparent;
+		border-top: 10px solid transparent;
 	}
 }
