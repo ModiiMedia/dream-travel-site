@@ -119,24 +119,28 @@ pricing_table:
       custom_icon: ''
     - description: 5000+ DreamTrips
       icon_type: Font Awesome
-      font_awesome_icon: wine-glass-alt
+      font_awesome_icon: home
       custom_icon: ''
     - description: Anytime Escapes
       icon_type: Font Awesome
-      font_awesome_icon: calendar-week
+      font_awesome_icon: calendar-check
       custom_icon: ''
     - description: Luxury Residences
       icon_type: Font Awesome
       custom_icon: ''
       font_awesome_icon: gem
-    - description: Purchase Unlimited Passport To Savings Trips
-      icon_type: Font Awesome
-      font_awesome_icon: dollar-sign
-      custom_icon: ''
     - description: DreamTrips Local
       icon_type: Font Awesome
-      font_awesome_icon: map-pin
+      font_awesome_icon: coffee
       custom_icon: media/1_20x.png
+    - description: RVnGo
+      icon_type: Font Awesome
+      font_awesome_icon: bus
+      custom_icon: ''
+    - description: Take UNLIMITTED DreamTrips
+      icon_type: Font Awesome
+      font_awesome_icon: suitcase
+      custom_icon: ''
     point_bonuses: |-
       * **140 Points** Enrollment
       * **684 Points** Anniversary
