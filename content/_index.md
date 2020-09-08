@@ -101,7 +101,7 @@ pricing_table:
       icon_type: Font Awesome
       font_awesome_icon: wine-glass
       custom_icon: ''
-    - description: Purchase One Passport To Savings Trip
+    - description: Purchase One Private DreamTrip
       icon_type: Font Awesome
       font_awesome_icon: ticket-alt
       custom_icon: ''
