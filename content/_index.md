@@ -162,10 +162,6 @@ pricing_table:
       icon_type: Font Awesome
       font_awesome_icon: gem
       custom_icon: ''
-    - description: Emergency Evacuation
-      icon_type: Font Awesome
-      custom_icon: ''
-      font_awesome_icon: shield-alt
     - description: Apply 50% More Points VS Gold
       icon_type: Font Awesome
       font_awesome_icon: smile-beam
