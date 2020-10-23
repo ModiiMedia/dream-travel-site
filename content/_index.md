@@ -83,7 +83,7 @@ pricing_table:
       custom_icon: ''
     - description: Resort Weeks & Vacation Rentals
       icon_type: Font Awesome
-      font_awesome_icon: ''
+      font_awesome_icon: bed
       custom_icon: ''
     - description: Activities
       icon_type: Font Awesome
@@ -91,7 +91,7 @@ pricing_table:
       custom_icon: ''
     - description: DreamBody
       icon_type: Font Awesome
-      font_awesome_icon: bicycle
+      font_awesome_icon: heart
       custom_icon: ''
     - description: Golf Tee Times
       icon_type: Font Awesome
