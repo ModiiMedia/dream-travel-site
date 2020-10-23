@@ -81,9 +81,9 @@ pricing_table:
       icon_type: Font Awesome
       font_awesome_icon: car
       custom_icon: ''
-    - description: Resort Weeks
+    - description: Resort Weeks & Vacation Rentals
       icon_type: Font Awesome
-      font_awesome_icon: swimming-pool
+      font_awesome_icon: ''
       custom_icon: ''
     - description: Activities
       icon_type: Font Awesome
@@ -232,5 +232,6 @@ pricing_table:
       * **2,400 Points** on Anniversary
   hide: false
   button_text: Got Questions?
+draft: true
 
 ---
