@@ -13,7 +13,7 @@ hero_banner:
     video_url: https://vimeo.com/443900752
     special_label: ''
   - speaker_name: Linda Muth
-    speaker_title: Naval Officer / Financial Services
+    speaker_title: Naval Officer / Financial Advisor
     speaker_photo: media/portrait-linda-muth.jpg
     special_label: DreamTrips Membership
     video_url: https://vimeo.com/446344408
