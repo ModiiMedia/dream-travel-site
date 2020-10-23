@@ -12,9 +12,9 @@ hero_banner:
     speaker_photo: media/portrait-linda-muth.jpg
     video_url: https://vimeo.com/443900752
     special_label: ''
-  - speaker_name: Marty Taylor
-    speaker_title: Naval Officer / School Teacher
-    speaker_photo: media/portrait-marty-taylor.jpg
+  - speaker_name: Linda Muth
+    speaker_title: Naval Officer / Financial Services
+    speaker_photo: media/portrait-linda-muth.jpg
     special_label: DreamTrips Membership
     video_url: https://vimeo.com/446344408
   - speaker_name: Pat Villegas
@@ -213,7 +213,7 @@ pricing_table:
       font_awesome_icon: check
     - description: Luxury Homes / Resorts / Villas
       icon_type: Font Awesome
-      font_awesome_icon: glass-cheers
+      font_awesome_icon: briefcase
       custom_icon: ''
     - description: Priority Access To Exclusive Events
       icon_type: Font Awesome
