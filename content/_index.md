@@ -89,9 +89,9 @@ pricing_table:
       icon_type: Font Awesome
       font_awesome_icon: calendar-day
       custom_icon: ''
-    - description: Vacation Rentals
+    - description: DreamBody
       icon_type: Font Awesome
-      font_awesome_icon: home
+      font_awesome_icon: bicycle
       custom_icon: ''
     - description: Golf Tee Times
       icon_type: Font Awesome
