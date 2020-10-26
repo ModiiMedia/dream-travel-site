@@ -19,7 +19,7 @@ hero_banner:
     video_url: https://vimeo.com/446346789
   - speaker_name: Pat Villegas
     speaker_title: Police Officer
-    speaker_photo: media/portrait-pat-villegas.jpg
+    speaker_photo: media/pat.PNG
     video_url: https://vimeo.com/443853939
     special_label: ''
   - speaker_name: Monique Alaniz
