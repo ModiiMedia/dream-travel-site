@@ -232,5 +232,6 @@ pricing_table:
       * **2,400 Points** on Anniversary
   hide: false
   button_text: Got Questions?
+draft: true
 
 ---
