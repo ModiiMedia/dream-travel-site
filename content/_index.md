@@ -20,17 +20,17 @@ hero_banner:
   - speaker_name: Pat Villegas
     speaker_title: Police Officer
     speaker_photo: media/pat.PNG
-    video_url: https://vimeo.com/443853939
+    video_url: ''
     special_label: ''
   - speaker_name: Monique Alaniz
     speaker_title: Small Business Owner
-    speaker_photo: media/portrait-monique-alaniz.jpg
-    video_url: https://vimeo.com/443853884
+    speaker_photo: media/momo.PNG
+    video_url: ''
     special_label: ''
   - speaker_name: Raymond Braun
     speaker_title: CPA / Business Owner
-    speaker_photo: media/portrait-raymond-braun.jpg
-    video_url: https://vimeo.com/443853998
+    speaker_photo: media/raymond.PNG
+    video_url: ''
     special_label: ''
   - speaker_name: Janie Braun
     speaker_title: AT&T Senior Management
@@ -39,8 +39,8 @@ hero_banner:
     special_label: ''
   - speaker_name: Pinkey Barbee
     speaker_title: Air Force / Govt. Employee
-    speaker_photo: media/portrait-pinkey-barbee.jpg
-    video_url: https://vimeo.com/444587844
+    speaker_photo: media/pinkey.PNG
+    video_url: ''
     special_label: ''
   banner_template: multiple videos
 call_to_action:
