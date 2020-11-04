@@ -73,10 +73,6 @@ pricing_table:
     initial_payment: 24.99
     monthly_cost: 24.99
     features:
-    - description: Cruises
-      icon_type: Font Awesome
-      font_awesome_icon: ship
-      custom_icon: ''
     - description: Hotels
       icon_type: Font Awesome
       font_awesome_icon: hotel
@@ -84,6 +80,10 @@ pricing_table:
     - description: Cars / Flights
       icon_type: Font Awesome
       font_awesome_icon: car
+      custom_icon: ''
+    - description: Cruises
+      icon_type: Font Awesome
+      font_awesome_icon: ship
       custom_icon: ''
     - description: Resort Weeks & Vacation Rentals
       icon_type: Font Awesome
@@ -137,10 +137,6 @@ pricing_table:
       icon_type: Font Awesome
       custom_icon: ''
       font_awesome_icon: gem
-    - description: RVnGo
-      icon_type: Font Awesome
-      font_awesome_icon: bus
-      custom_icon: ''
     - description: DreamTrips Local
       icon_type: Font Awesome
       font_awesome_icon: coffee
