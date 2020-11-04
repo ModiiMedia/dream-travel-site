@@ -73,6 +73,10 @@ pricing_table:
     initial_payment: 24.99
     monthly_cost: 24.99
     features:
+    - description: RVnGo
+      icon_type: Font Awesome
+      font_awesome_icon: bus
+      custom_icon: ''
     - description: Hotels
       icon_type: Font Awesome
       font_awesome_icon: hotel
@@ -129,14 +133,14 @@ pricing_table:
       icon_type: Font Awesome
       custom_icon: ''
       font_awesome_icon: gem
-    - description: DreamTrips Local
-      icon_type: Font Awesome
-      font_awesome_icon: coffee
-      custom_icon: media/1_20x.png
     - description: RVnGo
       icon_type: Font Awesome
       font_awesome_icon: bus
       custom_icon: ''
+    - description: DreamTrips Local
+      icon_type: Font Awesome
+      font_awesome_icon: coffee
+      custom_icon: media/1_20x.png
     - description: Take UNLIMITTED DreamTrips
       icon_type: Font Awesome
       font_awesome_icon: suitcase
@@ -232,5 +236,6 @@ pricing_table:
       * **2,400 Points** on Anniversary
   hide: false
   button_text: Got Questions?
+draft: true
 
 ---
