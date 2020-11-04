@@ -73,9 +73,9 @@ pricing_table:
     initial_payment: 24.99
     monthly_cost: 24.99
     features:
-    - description: RVnGo
+    - description: Cruises
       icon_type: Font Awesome
-      font_awesome_icon: bus
+      font_awesome_icon: ship
       custom_icon: ''
     - description: Hotels
       icon_type: Font Awesome
@@ -96,6 +96,10 @@ pricing_table:
     - description: DreamBody
       icon_type: Font Awesome
       font_awesome_icon: heart
+      custom_icon: ''
+    - description: RVnGo
+      icon_type: Font Awesome
+      font_awesome_icon: bus
       custom_icon: ''
     - description: Golf Tee Times
       icon_type: Font Awesome
