@@ -29,8 +29,8 @@ hero_banner:
     special_label: ''
   - speaker_name: Raymond Braun
     speaker_title: CPA / Business Owner
-    speaker_photo: media/raymond.PNG
-    video_url: ''
+    speaker_photo: media/portrait-raymond-braun.jpg
+    video_url: https://vimeo.com/475507020
     special_label: ''
   - speaker_name: Janie Braun
     speaker_title: AT&T Senior Management
