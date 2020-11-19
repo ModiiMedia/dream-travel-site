@@ -16,7 +16,7 @@ hero_banner:
     speaker_title: Naval Officer / Financial Advisor
     speaker_photo: media/portrait-linda-muth.jpg
     special_label: DreamTrips Membership
-    video_url: https://vimeo.com/446346789
+    video_url: https://vimeo.com/481342540
   - speaker_name: Pat Villegas
     speaker_title: Police Officer
     speaker_photo: media/pat.PNG
@@ -236,5 +236,6 @@ pricing_table:
       * **2,400 Points** on Anniversary
   hide: false
   button_text: Got Questions?
+draft: true
 
 ---
