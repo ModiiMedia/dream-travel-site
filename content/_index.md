@@ -10,13 +10,13 @@ hero_banner:
   - speaker_name: Linda Muth
     speaker_title: Naval Oficer / Financial Advisor
     speaker_photo: media/portrait-linda-muth.jpg
-    video_url: https://vimeo.com/481342635
+    video_url: https://vimeo.com/495654275
     special_label: ''
   - speaker_name: Linda Muth
     speaker_title: Naval Officer / Financial Advisor
     speaker_photo: media/portrait-linda-muth.jpg
-    special_label: DreamTrips Membership
-    video_url: https://vimeo.com/481342540
+    special_label: DreamTrips & SEACRET Membership
+    video_url: https://vimeo.com/495654275
   - speaker_name: Pat Villegas
     speaker_title: Police Officer
     speaker_photo: media/pat.PNG
