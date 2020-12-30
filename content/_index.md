@@ -35,7 +35,7 @@ hero_banner:
   - speaker_name: Janie Braun
     speaker_title: AT&T Senior Management
     speaker_photo: media/portrait-janie-braun.jpg
-    video_url: https://vimeo.com/443853772
+    video_url: ''
     special_label: ''
   - speaker_name: Pinkey Barbee
     speaker_title: Air Force / Govt. Employee
