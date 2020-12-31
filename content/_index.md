@@ -9,7 +9,7 @@ hero_banner:
   banner_videos:
   - speaker_name: Linda Muth
     speaker_title: Naval Oficer / Financial Advisor
-    speaker_photo: media/portrait-linda-muth.jpg
+    speaker_photo: media/lnda.jpg
     video_url: https://vimeo.com/495671169
     special_label: ''
   - speaker_name: Linda Muth
