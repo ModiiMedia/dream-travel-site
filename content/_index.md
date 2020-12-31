@@ -34,7 +34,7 @@ hero_banner:
     special_label: ''
   - speaker_name: Janie Braun
     speaker_title: AT&T Senior Management
-    speaker_photo: media/portrait-janie-braun.jpg
+    speaker_photo: media/screenshot-2020-12-31-142044.png
     video_url: ''
     special_label: ''
   - speaker_name: Pinkey Barbee
