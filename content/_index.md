@@ -5,16 +5,16 @@ featured_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
 hero_banner:
   banner_text: "## Your Journey Starts **Here**"
   banner_video: https://vimeo.com/433836452
-  background_image: media/picture1.jpg
+  background_image: ''
   banner_videos:
   - speaker_name: Linda Muth
     speaker_title: Naval Oficer / Financial Advisor
     speaker_photo: media/lnda.jpg
     video_url: https://vimeo.com/495671169
     special_label: ''
-  - speaker_name: Linda Muth
-    speaker_title: Naval Officer / Financial Advisor
-    speaker_photo: media/portrait-linda-muth.jpg
+  - speaker_name: Marty Taylor
+    speaker_title: Naval Officer / School Teacher
+    speaker_photo: media/marty-2.jpg
     special_label: DreamTrips & SEACRET Membership
     video_url: https://vimeo.com/495654275
   - speaker_name: Pat Villegas
