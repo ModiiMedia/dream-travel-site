@@ -5,7 +5,7 @@ featured_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
 hero_banner:
   banner_text: "## Your Journey Starts **Here**"
   banner_video: https://vimeo.com/433836452
-  background_image: media/justin-aikin-OCnAUpP1Ukc-unsplash.jpg
+  background_image: media/picture1.jpg
   banner_videos:
   - speaker_name: Linda Muth
     speaker_title: Naval Oficer / Financial Advisor
@@ -236,5 +236,6 @@ pricing_table:
       * **2,400 Points** on Anniversary
   hide: false
   button_text: Got Questions?
+draft: true
 
 ---
