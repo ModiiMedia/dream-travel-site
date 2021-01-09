@@ -19,8 +19,8 @@ hero_banner:
     video_url: https://vimeo.com/495654275
   - speaker_name: Pat Villegas
     speaker_title: Police Officer
-    speaker_photo: media/pat.PNG
-    video_url: ''
+    speaker_photo: media/portrait-pat-villegas.jpg
+    video_url: https://vimeo.com/498409997
     special_label: ''
   - speaker_name: Monique Alaniz
     speaker_title: Small Business Owner
