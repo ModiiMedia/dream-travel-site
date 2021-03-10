@@ -24,17 +24,17 @@ hero_banner:
     special_label: ''
   - speaker_name: Monique Alaniz
     speaker_title: Small Business Owner
-    speaker_photo: media/momo.png
+    speaker_photo: media/momo.PNG
     video_url: ''
     special_label: ''
   - speaker_name: Raymond Braun
     speaker_title: CPA / Business Owner
-    speaker_photo: media/raymond.png
+    speaker_photo: media/raymond.PNG
     video_url: ''
     special_label: ''
   - speaker_name: Janie Braun
     speaker_title: AT&T Senior Management
-    speaker_photo: ''
+    speaker_photo: media/portrait-janie-braun.jpg
     video_url: ''
     special_label: ''
   - speaker_name: Pinkey Barbee
