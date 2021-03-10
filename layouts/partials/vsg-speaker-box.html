@@ -9,15 +9,19 @@
         data-speaker-photo="
             {{- with .speaker_photo -}}
                 {{- $img := resources.Get . -}}
-                {{- $resized := $img.Fill "700x700 q70" -}}
-                {{- $resized.RelPermalink -}}
+                {{ if $img }}
+                    {{- $resized := $img.Fill "700x700 q70" -}}
+                    {{- $resized.RelPermalink -}}
+                {{ end }}
             {{- end -}}"
         data-special-label="{{ $label }}">
         <figure class="image is-1by1 vsg-speaker-photo is-relative">
             {{ with .speaker_photo }}
                 {{- $img := resources.Get . -}}
+                {{ if $img }}
                 {{- $resized := $img.Fill "700x700 q70" -}}
                 <img src="{{ $resized.RelPermalink }}" alt="Photo of {{ $name }}">
+                {{ end }}
             {{ end }}
             <div class="image-overlay is-flex has-background-black" style="justify-content: center; align-items: center;">
                 <span class="icon has-text-white is-size-1">
