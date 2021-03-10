@@ -3,5 +3,5 @@ command = 'npm run build'
 publish = 'public'
 
 [context.production.environment]
-HUGO_VERSION = '0.55.6'
+HUGO_VERSION = '0.79.1'
 NODE_VERSION = '10.15.3'
